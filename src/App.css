@@ -1,38 +1,370 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/****** ORANGE ******/
+#orange_container {
+  width: 100%;
+  background-color: #ed7732;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#icons {
+  padding-left: 150px;
+}
+
+#contact {
+  font-family: "Concert One", sans-serif;
+  border: 1px solid white;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 50px;
+  margin-left: 800px;
+}
+
+#p_contact {
+  color: white;
+  text-align: center;
+  padding-top: 5.5px;
+  margin: 0;
+}
+
+#orange_Logo {
+  padding-right: 10px;
+  width: 30px;
+  height: auto;
+}
+/****** NAVBAR ******/
+#wholenav {
+  position: sticky;
+  top: 0;
+}
+
+#nav_ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#navlogo_li {
+  float: left;
+  padding-top: 10px;
+  padding-left: 120px;
+}
+
+#navlogo {
+  width: 250px;
+  float: left;
+  transition: transform 0.3s ease;
+}
+
+#navlogo:hover {
+  transform: scale(1.06);
+}
+
+#navcontainer {
+  padding-top: 20px;
+  padding-right: 145px;
+  padding-bottom: 40px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: darkgray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Concert One", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+li a:hover:not(.active) {
+  color: #ed7732;
+  transform: scale(1.06);
+}
+
+.active {
+  color: #ed7732;
+  transform: scale(1.06);
+}
+
+/****** HEADER ******/
+
+#header_container {
+  width: inherit;
+  height: auto;
+}
+
+#bg_top {
+  background-image: url("../public/bg-top.png");
+  background-size: cover;
+  width: inherit;
+  height: 470px;
+  background-repeat: no-repeat;
+}
+
+#p_container {
+  padding-top: 10%;
+}
+
+#p_title {
+  font-family: "Concert One", sans-serif;
+  color: white;
+  font-size: 60px;
+  padding: 0%;
+  margin: 0%;
+}
+
+#p_body {
+  font-family: "DM Mono", monospace;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  padding: 0%;
+  margin: 0%;
+}
+
+/****** Body ******/
+
+#bg_bottom {
+  background-image: url("../public/bg-bottom.png");
+  background-size: cover;
+  width: inherit;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+#p_bottom_container {
+  padding-top: 5%;
+}
+
+#p_bottom_title {
+  font-family: "Concert One", sans-serif;
+  color: #ed7732;
+  font-size: 60px;
+  padding: 0%;
+  margin: 0%;
+}
+
+#p_bottom_body {
+  font-family: "Concert One", sans-serif;
+  color: grey;
+  font-size: 20px;
+  padding: 0%;
+  margin: 0%;
+}
+
+/****** Cards ******/
+#card_container {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 9%;
+  margin-bottom: 50px;
+}
+#cards {
+  border: 1px;
+  width: 14%;
+  height: 200px;
+  padding: 30px;
+  border-radius: 30px;
+  display: grid;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+#card_img {
+  float: left;
+  width: 60px;
+}
+
+#p_card {
+  font-family: "Concert One", sans-serif;
+  color: grey;
+  font-size: 17px;
+  text-align: left;
+}
+
+/****** Footer ******/
+#footer_container {
+  width: inherit;
+  height: 390px;
+  background-image: linear-gradient(180deg, #f20c90, #eb5e92);
+}
+
+#top_footer_container {
+  display: flex;
+  align-items: start;
+  padding-top: 30px;
+  padding-left: 140px;
+}
+
+#Logo_div {
+  padding-top: 30px;
+}
+
+#Logo {
+  width: 200px;
+  height: 200px;
+}
+
+#About {
+  width: 22%;
+  padding-left: 50px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+#About_title {
+  font-family: "Concert One", sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+#About_text {
+  font-family: "DM Mono", monospace;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+}
+
+#pink_Logo {
+  padding-right: 10px;
+  width: 35px;
+  height: auto;
+}
+
+#HQ {
+  width: 22%;
+  padding-left: 50px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+#HQ_title {
+  font-family: "Concert One", sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+#HQ_text {
+  font-family: "DM Mono", monospace;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+}
+
+#Quicklink {
+  width: 22%;
+  padding-left: 50px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+#QL_title {
+  font-family: "Concert One", sans-serif;
+  color: white;
+  font-size: 25px;
+}
+#QL_container {
+  display: flex;
+  height: 195px;
+}
+
+#QL_container_text {
+  font-family: "Concert One", sans-serif;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  padding-bottom: 0;
+}
+.vertical-menu {
+  width: 100px;
+  padding-top: 0%;
+  height: 250px;
+}
+
+.vertical-menu a {
+  font-family: "Concert One", sans-serif;
+  font-size: 20px;
+  color: white;
+  display: block;
+  padding-bottom: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.vertical-menu a:hover {
+  color: #49cdd5;
+  transform: scale(1.2);
+}
+
+.vertical-menu a.active {
+  color: #49cdd5;
+}
+
+.vertical_container {
+  height: 150px;
+  padding-top: 100px;
+}
+
+.vertical_div {
+  transform: translateX(5px) rotate(-90deg);
+  transition: 0.3s ease;
+  display: flex;
+}
+
+.vertical_arrow {
+  transform: translateX(5px) rotate(-90deg);
+  transition: 0.3s ease;
+}
+
+.vertical_p {
+  font-family: "Concert One", sans-serif;
+  width: 160px;
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.vertical_container a {
+  font-family: "Concert One", sans-serif;
+  font-size: 20px;
+  color: white;
+  display: block;
+  padding-bottom: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vertical_container a:hover {
+  color: #49cdd5;
+}
+#bottom_footer {
+  border-top: 1px solid white;
+  width: 75%;
+}
+
+#left_text {
+  float: left;
+  color: white;
+}
+
+#right_text {
+  float: right;
+  display: flex;
+}
+
+#right_text_p {
+  font-family: "Concert One", sans-serif;
+  color: white;
+  padding-left: 10px;
 }
