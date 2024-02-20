@@ -129,6 +129,43 @@ li a:hover:not(.active) {
   margin: 0%;
 }
 
+/****** HEADER ******/
+
+#congrats_header_container {
+  width: inherit;
+  height: auto;
+}
+
+#congrats_bg_top {
+  background-image: url("../public/bg-top.png");
+  background-size: cover;
+  width: inherit;
+  height: 470px;
+  background-repeat: no-repeat;
+  background-color: #9e3ac3;
+}
+
+#congrats_p_container {
+  padding-top: 10%;
+}
+
+#congrats_p_title {
+  font-family: "Concert One", sans-serif;
+  color: white;
+  font-size: 60px;
+  padding: 0%;
+  margin: 0%;
+}
+
+#congrats_p_body {
+  font-family: "DM Mono", monospace;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  padding: 0%;
+  margin: 0%;
+}
+
 /****** Body ******/
 
 #bg_bottom {
@@ -153,7 +190,40 @@ li a:hover:not(.active) {
 
 #p_bottom_body {
   font-family: "Concert One", sans-serif;
-  color: grey;
+  color: white;
+  font-size: 20px;
+  padding: 0%;
+  margin: 0%;
+}
+
+/****** Congrats Body ******/
+
+#congrats_bg_bottom {
+  background-image: url("../public/bg-bottom.png");
+  background-size: contain;
+  width: inherit;
+  height: auto;
+  margin-bottom: -50px;
+  padding-bottom: 30px;
+  background-repeat: no-repeat;
+  background-color: #9e3ac3;
+}
+
+#congrats_p_bottom_container {
+  padding-top: 5%;
+}
+
+#congrats_p_bottom_title {
+  font-family: "Concert One", sans-serif;
+  color: #ed7732;
+  font-size: 60px;
+  padding: 0%;
+  margin: 0%;
+}
+
+#congrats_p_bottom_body {
+  font-family: "Concert One", sans-serif;
+  color: white;
   font-size: 20px;
   padding: 0%;
   margin: 0%;
@@ -174,7 +244,9 @@ li a:hover:not(.active) {
   border-radius: 30px;
   display: grid;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   margin-top: 50px;
   margin-left: 40px;
@@ -188,6 +260,44 @@ li a:hover:not(.active) {
 #p_card {
   font-family: "Concert One", sans-serif;
   color: grey;
+  font-size: 17px;
+  text-align: left;
+}
+
+/****** Congrats Cards ******/
+#congrats_card_container {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 9%;
+  margin-bottom: 50px;
+}
+#congrats_cards {
+  border: 1px;
+  width: 15%;
+  height: 350px;
+  padding: 30px;
+  border-radius: 30px;
+  display: grid;
+  background-color: #f20c90;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+#congrats_cards_div {
+  margin: 0px;
+}
+
+#congrats_card_img {
+  width: 150px;
+}
+
+#congrats_p_card {
+  font-family: "Concert One", sans-serif;
+  color: white;
   font-size: 17px;
   text-align: left;
 }

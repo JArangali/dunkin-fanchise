@@ -1,11 +1,15 @@
 import Orange from "./Orange";
 import Navbar from "./Navbar";
-import Header from "./Header";
-import Body from "./Body";
+// import Header from "./Header";
+// import Body from "./Body";
 import Footer from "./Footer";
 import "./App.css";
+import Franchise from "./Franchise";
+import Congrats from "./Congrats";
 
 function App() {
+  const isFranchised = false;
+
   return (
     <div className="App">
       <head>
@@ -23,8 +27,7 @@ function App() {
       </head>
       <Orange />
       <Navbar />
-      <Header />
-      <Body />
+      {isFranchised ? <Congrats /> : <Franchise />}
       <Footer />
     </div>
   );
